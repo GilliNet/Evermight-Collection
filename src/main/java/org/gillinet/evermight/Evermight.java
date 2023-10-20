@@ -38,11 +38,9 @@ public class Evermight
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
+        // Register deferred registers for blocks, items, and the creative tab
         EBlocks.BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         EItems.ITEMS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
         ECreativeTab.CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
@@ -69,6 +67,7 @@ public class Evermight
     }
 
     // Add the example block item to the building blocks tab
+    // Only used for adding modded items to vanilla tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

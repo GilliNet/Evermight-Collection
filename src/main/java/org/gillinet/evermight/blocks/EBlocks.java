@@ -3,6 +3,10 @@ package org.gillinet.evermight.blocks;
 import org.gillinet.evermight.Evermight;
 
 import net.minecraft.world.level.block.Block;
+
+// Here's where all blocks are registered and created, good code reference 
+// net.minecraft.world.level.block.Blocks;
+
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
