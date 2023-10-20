@@ -13,7 +13,7 @@ public class ECreativeTab {
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "evermight" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Evermight.MODID);
 
-    // Creates a creative tab with the id "evermight:example_tab" for the example item, that is placed after the combat tab
+    // Creates a creative tab with the id "evermight:Evermight" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EVERMIGHT_TAB = CREATIVE_MODE_TABS.register("evermight_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> EItems.EXAMPLE_ITEM.get().getDefaultInstance())
